@@ -7,9 +7,7 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,8 +19,24 @@
     <p>You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
   <h1>compass</h1>
+
+  <div class="demo animated disable">
+    <div class="notice init"><span class="notice-wrap"><span class="compass-icon"></span>Detecting compass support</span></div>
+    <div class="notice no-support"><span class="notice-wrap"><span class="compass-icon"></span>Open on mobile phone, to&nbsp;view&nbsp;compass&nbsp;example</span></div>
+    <div class="notice gps"><span class="notice-wrap"><span class="compass-icon"></span>GPS Hack step 1. Go outside to&nbsp;get&nbsp;GPS&nbsp;signal.</span></div>
+    <div class="notice move"><span class="notice-wrap"><span class="compass-icon"></span>GPS Hack step 2. Go forward to take initialized heading from GPS.</span></div>
+    <div class="compass">
+      <div class="circle"></div>
+      <div class="arrow">
+        <div class="letter">N</div>
+      </div>
+      <div class="degrees"><span class="value">0</span><span class="mark">°</span></div>
+    </div>
+  </div>
+
+  <script src="./compass.js"></script>
+  <script src="./index.js"></script>
 
 </body>
 
